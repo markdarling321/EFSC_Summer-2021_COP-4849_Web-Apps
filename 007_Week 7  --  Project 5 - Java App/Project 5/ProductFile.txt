@@ -1,0 +1,17 @@
+5432:2300:16-oz. Ketchup:4.25
+265:10429:Wheat Bread:7.59
+35612:5114:Gallon Milk:6.54
+98123:3613:24 oz. Cereal:5.97
+610603:678:16 oz. Baked Beans:3.48
+451:19456:Large Lays Potatoe Chips:4.19
+9487:2176:Planters Peanuts:6.73
+4742:981:5lb. Bag of Apples:8.12
+482341:56729:12 Pack 1lb. Burgers:10.87
+602:9870:12 pk. Hot Dogs:9.52
+34509:563:12 pk. Hamburger rolls:4.98
+39123:810:12 pk. Hot Dog rolls:4.98
+5892:2003:16 oz. Barbecue Sauce:6.89
+40912:1256:8 oz. Pickles:3.75
+78213:316:16 oz. Bacon:7.23
+3232:300:1 Doen Eggs:2.98
+45023:473:16 oz. Spaghetti Sauce:3.41
