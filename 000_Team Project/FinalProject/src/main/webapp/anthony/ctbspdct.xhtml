@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:f="http://java.sun.com/jsf/core"
+    xmlns:ui="http://java.sun.com/jsf/facelets">
+<ui:composition template="/template.xhtml">
+<ui:define name="tabTitle">CTBSPDCT</ui:define>
+    
+<ui:define name="title">Computer Information Systems Technology 
+    Bachelor of Applied Science  --  Software Development Specialization</ui:define>
+    
+<ui:define name="body">
+    <h:form>
+        <h:dataTable 
+            value="#{CTBSPDCTDegreeBean.courses}"
+            var="course"
+            styleClass="scheduleTable"
+            headerClass="scheduleTableHeader"
+            rowClasses="scheduleTableOddRow, scheduleTableEvenRow"
+            columnClasses="scheduleTableCol01,scheduleTableCol02,scheduleTableCol03,scheduleTableCol04,scheduleTableCol05,scheduleTableCol06,scheduleTableCol07,scheduleTableCol08,scheduleTableCol09,scheduleTableCol10,scheduleTableCol11,scheduleTableCol12,scheduleTableCol13,scheduleTableCol14,scheduleTableCol15,scheduleTableCol16,scheduleTableCol17">
+            <h:column>
+                <f:facet name="header">Course Number</f:facet>
+                #{course.number}
+            </h:column>
+            <h:column>
+                <f:facet name="header">Course Name</f:facet>
+                #{course.name}
+            </h:column>
+            <h:column>
+                <f:facet name="header">FALL<br></br>Palm Bay</f:facet>
+                <h:selectBooleanCheckbox value="#{course.getCourseOffered(0, 0)}"
+                                         onclick="return false;"
+                                         onkeydown="return false" />
+            </h:column>
+            <h:column>
+                <f:facet name="header">FALL<br></br>Melbourne</f:facet>
+                <h:selectBooleanCheckbox value="#{course.getCourseOffered(0, 1)}"
+                                         onclick="return false;"
+                                         onkeydown="return false" />
+            </h:column>
+            <h:column>
+                <f:facet name="header">FALL<br></br>Cocoa</f:facet>
+                <h:selectBooleanCheckbox value="#{course.getCourseOffered(0, 2)}"
+                                         onclick="return false;"
+                                         onkeydown="return false" />
+            </h:column>
+            <h:column>
+                <f:facet name="header">FALL<br></br>Titusville</f:facet>
+                <h:selectBooleanCheckbox value="#{course.getCourseOffered(0, 3)}"
+                                         onclick="return false;"
+                                         onkeydown="return false" />
+            </h:column>
+            <h:column>
+                <f:facet name="header">FALL<br></br>eLearning</f:facet>
+                <h:selectBooleanCheckbox value="#{course.getCourseOffered(0, 4)}"
+                                         onclick="return false;"
+                                         onkeydown="return false" />
+            </h:column>
+            <h:column>
+                <f:facet name="header">SPRING<br></br>Palm Bay</f:facet>
+                <h:selectBooleanCheckbox value="#{course.getCourseOffered(1, 0)}"
+                                         onclick="return false;"
+                                         onkeydown="return false" />
+            </h:column>
+            <h:column>
+                <f:facet name="header">SPRING<br></br>Melbourne</f:facet>
+                <h:selectBooleanCheckbox value="#{course.getCourseOffered(1, 1)}"
+                                         onclick="return false;"
+                                         onkeydown="return false" />
+            </h:column>
+            <h:column>
+                <f:facet name="header">SPRING<br></br>Cocoa</f:facet>
+                <h:selectBooleanCheckbox value="#{course.getCourseOffered(1, 2)}"
+                                         onclick="return false;"
+                                         onkeydown="return false" />
+            </h:column>
+            <h:column>
+                <f:facet name="header">SPRING<br></br>Titusville</f:facet>
+                <h:selectBooleanCheckbox value="#{course.getCourseOffered(1, 3)}"
+                                         onclick="return false;"
+                                         onkeydown="return false" />
+            </h:column>
+            <h:column>
+                <f:facet name="header">SPRING<br></br>eLearning</f:facet>
+                <h:selectBooleanCheckbox value="#{course.getCourseOffered(1, 4)}"
+                                         onclick="return false;"
+                                         onkeydown="return false" />
+            </h:column>
+            <h:column>
+                <f:facet name="header">SUMMER<br></br>Palm Bay</f:facet>
+                <h:selectBooleanCheckbox value="#{course.getCourseOffered(2, 0)}"
+                                         onclick="return false;"
+                                         onkeydown="return false" />
+            </h:column>
+            <h:column>
+                <f:facet name="header">SUMMER<br></br>Melbourne</f:facet>
+                <h:selectBooleanCheckbox value="#{course.getCourseOffered(2, 1)}"
+                                         onclick="return false;"
+                                         onkeydown="return false" />
+            </h:column>
+            <h:column>
+                <f:facet name="header">SUMMER<br></br>Cocoa</f:facet>
+                <h:selectBooleanCheckbox value="#{course.getCourseOffered(2, 2)}"
+                                         onclick="return false;"
+                                         onkeydown="return false" />
+            </h:column>
+            <h:column>
+                <f:facet name="header">SUMMER<br></br>Titusville</f:facet>
+                <h:selectBooleanCheckbox value="#{course.getCourseOffered(2, 3)}"
+                                         onclick="return false;"
+                                         onkeydown="return false" />
+            </h:column>
+            <h:column>
+                <f:facet name="header">SUMMER<br></br>eLearning</f:facet>
+                <h:selectBooleanCheckbox value="#{course.getCourseOffered(2, 4)}"
+                                         onclick="return false;"
+                                         onkeydown="return false" />
+            </h:column>
+        </h:dataTable>
+    </h:form>
+</ui:define>
+</ui:composition>
+</html>

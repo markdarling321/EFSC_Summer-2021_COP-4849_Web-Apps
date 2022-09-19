@@ -1,0 +1,14 @@
+<!-- DTD document for employee.xml -->
+
+<!ELEMENT employee ( emprecord+ )>
+
+<!ELEMENT emprecord ( empno, ename, job, mgr, hiredate, sal, comm, deptno )>
+
+<!ELEMENT empno ( #PCDATA )>
+<!ELEMENT ename ( #PCDATA )>
+<!ELEMENT job ( #PCDATA )>
+<!ELEMENT mgr ( #PCDATA )>
+<!ELEMENT hiredate ( #PCDATA )>
+<!ELEMENT sal ( #PCDATA )>
+<!ELEMENT comm ( #PCDATA )>
+<!ELEMENT deptno ( #PCDATA )>

@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<faces-config version="2.2"
+              xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_2.xsd">
+    <managed-bean eager="true">
+        <description>myCTBSConnectBean</description>
+        <managed-bean-name>CTBSConnectBean</managed-bean-name>
+        <managed-bean-class>cop4849.finalproject.CTBSConnectBean</managed-bean-class>
+        <managed-bean-scope>application</managed-bean-scope>
+    </managed-bean>
+    <managed-bean>
+        <description>myCTBSPMCTDegreeBean</description>
+        <managed-bean-name>CTBSPMCTDegreeBean</managed-bean-name>
+        <managed-bean-class>cop4849.finalproject.CTBSPMCTDegreeBean</managed-bean-class>
+        <managed-bean-scope>request</managed-bean-scope>
+    </managed-bean>
+    <managed-bean>
+        <description>myCTBSPDCTDegreeBean</description>
+        <managed-bean-name>CTBSPDCTDegreeBean</managed-bean-name>
+        <managed-bean-class>cop4849.finalproject.CTBSPDCTDegreeBean</managed-bean-class>
+        <managed-bean-scope>request</managed-bean-scope>
+    </managed-bean>
+    <managed-bean>
+        <description>myCTBSNSCTDegreeBean</description>
+        <managed-bean-name>CTBSNSCTDegreeBean</managed-bean-name>
+        <managed-bean-class>cop4849.finalproject.CTBSNSCTDegreeBean</managed-bean-class>
+        <managed-bean-scope>request</managed-bean-scope>
+    </managed-bean>
+    <managed-bean>
+        <description>myCTBSCSCTDegreeBean</description>
+        <managed-bean-name>CTBSCSCTDegreeBean</managed-bean-name>
+        <managed-bean-class>cop4849.finalproject.CTBSCSCTDegreeBean</managed-bean-class>
+        <managed-bean-scope>request</managed-bean-scope>
+    </managed-bean>
+    <managed-bean>
+        <description>myCTBSDSBSDegreeBean</description>
+        <managed-bean-name>CTBSDSBSDegreeBean</managed-bean-name>
+        <managed-bean-class>cop4849.finalproject.CTBSDSBSDegreeBean</managed-bean-class>
+        <managed-bean-scope>request</managed-bean-scope>
+    </managed-bean>
+    <managed-bean>
+        <description>myCTBSDegreeBean</description>
+        <managed-bean-name>CTBSDegreeBean</managed-bean-name>
+        <managed-bean-class>cop4849.finalproject.CTBSDegreeBean</managed-bean-class>
+        <managed-bean-scope>request</managed-bean-scope>
+    </managed-bean>
+</faces-config>

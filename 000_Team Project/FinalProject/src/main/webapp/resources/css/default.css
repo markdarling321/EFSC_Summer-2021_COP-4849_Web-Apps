@@ -1,0 +1,111 @@
+body {
+    background-color: #EEEDE8;
+    font-size: 12px;
+    font-family: Verdana, "Verdana CE",  Arial, "Arial CE", "Lucida Grande CE", lucida, "Helvetica CE", sans-serif;
+    color: #000000;  
+    margin: 10px;
+}
+
+h1 {
+    font-family: Arial, "Arial CE", "Lucida Grande CE", lucida, "Helvetica CE", sans-serif;
+    border-bottom: 1px solid #AFAFAF; 
+    font-size:  largest;
+    font-weight: bold;
+    margin: 0px;
+    padding: 0px;
+    color: #047940;
+}
+
+a:link, a:visited {
+  color: #045491;
+  font-weight : bold;
+  text-decoration: none;
+}
+
+a:link:hover, a:visited:hover  {
+  color: #045491;
+  font-weight : bold;
+  text-decoration : underline;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #1A2028;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #7E9F06;
+  color: #FFFFFF;
+}
+
+.topnav a.active {
+  background-color: #99CC00;
+  color: white;
+}
+
+.scheduleTable {   
+   border-collapse:collapse;
+   border:4px solid #000000;
+   width: 100%;
+}
+
+.scheduleTableHeader {
+   text-align:center;
+   background:none repeat scroll 0 0 #5B8EAD;
+   border-bottom:4px solid #000000;  
+   padding:8px;
+   color:#FFFFFF;
+   font-weight:bold;
+   font-size:small;
+}
+
+.scheduleTableOddRow {
+   text-align:center;
+   background:none repeat scroll 0 0 #FFFFFF;
+   font-weight:bold;
+   font-size:smaller;
+}
+
+.scheduleTableEvenRow {
+   text-align:center;
+   background:none repeat scroll 0 0 #DDDCD2;
+   font-weight:bold;
+   font-size:smaller;
+}
+.scheduleTableCol02 {
+   text-align:left;
+   border-right: 4px solid #000000;
+}
+
+.scheduleTableCol07,
+.scheduleTableCol12 {
+    border-right: 4px solid #000000;
+}
+
+.scheduleTableCol03,
+.scheduleTableCol04,
+.scheduleTableCol05,
+.scheduleTableCol06,
+.scheduleTableCol07,
+.scheduleTableCol08,
+.scheduleTableCol09,
+.scheduleTableCol10,
+.scheduleTableCol11,
+.scheduleTableCol12,
+.scheduleTableCol13,
+.scheduleTableCol14,
+.scheduleTableCol15,
+.scheduleTableCol16,
+.scheduleTableCol17 {
+   text-align:center;
+   padding: 4px;
+}

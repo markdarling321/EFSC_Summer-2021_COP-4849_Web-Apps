@@ -1,0 +1,48 @@
+
+User Creation Script. To configure basic authentication where each user can only view their webpage and group's a and b can view all webpages.
+
+Create the users and groups on the Glassfish Server First:
+
+	Start the server
+	Right click on View Domain Admin Console
+	Expand server-config
+	Expand security
+	Expand Realms
+	Select file
+	Manage users
+	Add user name, group, password
+	Click save
+	Repeat for each user below.
+	The user id, group, and password are all the same. For groupa and groupb, list the names of each group (everyone's names) separated by a colon(:)
+
+	kenneth
+	mark
+	anthony
+	kevin
+	jose
+	chandler
+	groupa
+	groupb
+
+After all users are created and saved, proceed below.
+
+	Expand Configurations
+	Expand server-config
+	Select security
+	Select checkbox for Default Principal to Role Mapping Enabled
+	Save
+	Close out console
+
+Create a folder for each user in the webpages(in the webapp folder if you do in file explorer) directory, use the same naming convention, their first name and put each user's xhtml file in their respective folders. 
+You don't have to do this for group a or b.
+ctb
+Update the web.xml file with security constraints from my file or just replace it with what I sent. If you replace it, make sure the url-pattern and welcome-file values are updated for how you set up your webapp instance.
+
+Add the file folder path to the template xhtml file to each outcome value in the h:link elements. (example: "/norman/ctbsexample")
+
+Click on a user's link, you will be prompted for the creds configured in Glassfish. 
+	You have to close the browser completely each time to test it, whatever creds you used will be cached by the browser.
+
+
+
+

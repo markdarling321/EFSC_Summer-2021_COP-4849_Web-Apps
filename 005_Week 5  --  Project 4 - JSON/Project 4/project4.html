@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset = "utf-8">
+        <!-- <link rel="stylesheet" href="style.css"> -->
+        <!-- <script type="text/javascript" language="javascript" src="project4.json"></script> -->
+        <style>
+            /* CSS GOES HERE */
+            table, th, td {
+                border: 5px solid red;
+                border-collapse: collapse;
+                padding: 5px;
+            }
+        </style>
+        <title>PROJECT 4 - JSON</title>
+        <script type="text/javascript">
+            // JAVASCRIPT GOES HERE
+
+            // CREATE JS XHR REQUEST OBJ
+            const xmlhttp = new XMLHttpRequest();
+
+            // DEFINE JS onload FUNCTION TO BE EXECUTED AFTER
+            // XHR TRANSACTION COMPLETES SUCCESSFULLY
+            xmlhttp.onload = function() {
+
+                // DEFINE JS OBJECT TO STORE PARSED JSON DATA
+                const myObj = JSON.parse(this.responseText);
+
+                // STORE GRADES ARRAY IN A SEPARATE PRE-PROCESSED JS STRING
+                var gradesArrStr = "";
+                for (var i = 0; i < myObj.grades.length; i++)
+                {
+                    gradesArrStr += myObj.grades[i];
+                    if (i < myObj.grades.length - 1)
+                        gradesArrStr += ", "
+                }
+
+                // USE JS TO UPDATE HTML USING PARSED JSON DATA STORED IN OBJ
+                document.getElementById('jsonTable').insertAdjacentHTML('beforeend',
+                    '<tr>' +
+                    '<td>' + myObj.firstName    + '</td>' +
+                    '<td>' + myObj.lastName     + '</td>' +
+                    '<td>' + gradesArrStr       + '</td>' +
+                    '<td>' + myObj.credits      + '</td>' +
+                    '</tr>'
+                );  
+
+            };// END onload JS FUNCTION()
+
+            // RETRIEVE DATA FROM (LOCAL) JSON FILE
+            xmlhttp.open("GET", "project4.json");
+
+            // SEND ASYNC REQUEST TO (LOCAL) SERVER
+            xmlhttp.send();
+        </script>
+    </head>
+    <body>
+        <!-- HTML GOES HERE -->
+        <div id="project4">
+            <h1>Project 4</h1>
+            <table id="jsonTable">
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Grades</th>
+                    <th>Credits</th>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
